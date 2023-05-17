@@ -47,7 +47,7 @@
                                 <b>Johnny Tian-Zheng Wei</b>
                             </h5>
                             <p class="card-text">
-                                PhD Student
+                                PhD Candidate
                                 </br>
                                 Computer Science Department
                                 </br>
@@ -70,7 +70,7 @@
                     </p>
 
                     <p>
-                        If you would like to get in touch, feel free to email me! I am currently looking for an internship for the summer of 2023.
+                        If you would like to get in touch, feel free to email me!
 		    </p>
                 </div>
             </div>
@@ -92,6 +92,25 @@
                     A full list of my publications can be found on <a href="https://scholar.google.com/citations?user=TVFpiukAAAAJ" target="_blank">Google Scholar</a>.
 		    <br>
                     <ul class="pl">
+			 <li>
+                            <a href="https://arxiv.org/pdf/2305.09601.pdf" target="_blank">
+                                <b>Operationalizing content moderation "accuracy" in the Digital Services Act</b>
+                            </a>
+                            <br/>
+                            <b>Johnny Tian-Zheng Wei</b>,
+			    <a href="https://www.coll.mpg.de/frederike-zufall" target="_blank">Frederike Zufall</a>, 
+                            and <a href="https://robinjia.github.io/" target="_blank">Robin Jia</a>.
+                            <br/>
+                                <b>Preprint</b></a>.
+                            <br/>
+                            [<a href="#" onclick="$('#operationalizing_accuracy_abstract').toggle();return false;">abstract</a>]
+			    [<a href="https://aclanthology.org/2022.wmt-1.7.bib" target="_blank">bib</a>]
+                            <div id="operationalizing_accuracy_abstract" class="abstract" style="display:none;">
+                                <p>
+                                    The Digital Services Act, recently adopted by the EU, requires social media platforms to report the "accuracy" of their automated content moderation systems. The colloquial term is vague, or open-textured -- on what data and ground truth labels are we measuring accuracy? In addition, the literal accuracy (number of correct predictions divided by the total) is not suitable for problems with large class imbalance. Without more detailed specification, the regulatory requirement allows for deficient or even malicious reporting from companies. In this interdisciplinary work, we operationalize "accuracy" reporting by both refining legal concepts and providing technical implementation. After addressing underspecification, we propose more appropriate accuracy measures by relating problems of overmoderation and undermoderation to low precision and low recall, respectively. While estimating precision is statistically straightforward, estimating recall poses a challenging statistical problem. Naive estimation can incur extremely high annotation costs, which would be unduly burdensome and interfere disproportionately with the platform's right to conduct business. We introduce stratified sampling with trained classifiers, and we show it greatly improves efficiency of recall estimation compared with random sampling on the CivilComments dataset. From this, we provide concrete recommendations in applying stratified sampling to improve efficiency. Using this improved estimator, we study moderation recall of personal attacks on different subreddits, and calculate realistic statistics to demonstrate such a reporting requirement in practice. We conclude by relating our legal and technical analysis to guidelines for future legal clarification and implementation.
+                                </p>
+                            </div>
+                        </li>
 			 <li>
                             <a href="https://arxiv.org/pdf/2210.11612.pdf" target="_blank">
                                 <b>Searching for a higher power in the human evaluation of MT</b>
