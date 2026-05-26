@@ -105,6 +105,45 @@
                <br>
                <ul class="pl">
                   <li>
+                     <a href="pdfs/PhD_Thesis.pdf">
+                     <b>Statistically principled measurement of large language models by spiking the training data</b>
+                     </a>
+                     <br/>
+                     <b>Johnny Tian-Zheng Wei</b>.
+                     <br/>
+                     PhD thesis.
+                     <br/>
+                     [<a href="#" onclick="$('#thesis_abstract').toggle();return false;">abstract</a>]
+                     <div id="thesis_abstract" class="abstract" style="display:none;">
+                        <p>
+                           To properly measure large language models (LLMs), we must go beyond observational analysis. I trace the theme of spiking (inserting certain data into training at known rates) in my own work, and motivate spiking from both statistical and legal perspectives. From the statistical perspective, I review the importance of randomization in making exact inferences about model properties. Many inferences are only possible if developers spike their training data and insert additional randomness. From the legal perspective, I review how law analyzes both the behavior and structure of technology. Spiking can be seen as a structural design feature for LLMs and support a legal defense under structural scrutiny.
+
+                           The final work of this thesis demonstrates a practical application of spiking, where spiking enables principled statistical correction for test set contamination. Methods for correction are validated on Hubble, and I give an overview of the Hubble model suite, a suite of open-source LLMs spiked with book passages, biographies, and test sets, intended to enable a wide range of causal study on LLM memorization. Experiments on Hubble show that spiking a small number of test examples or natural texts makes it possible to calibrate memorization detectors and statistically correct inflated test scores. Finally, I will conclude on future directions for spiking and the implications for technical governance.
+                        </p>
+                     </div>
+                  </li>
+                  <br/>
+                  <li>
+                     <a href="https://arxiv.org/pdf/2605.24818">
+                     <b>Spiking the training data to correct for test set contamination</b>
+                     </a>
+                     <br/>
+                     <b>Johnny Tian-Zheng Wei</b>,
+                     <a href="https://jeli04.github.io/">Jerry Li</a>,
+                     <a href="https://ameyagodbole.github.io/">Ameya Godbole</a>,
+                     and <a href="https://robinjia.github.io/">Robin Jia</a>.
+                     <br/>
+                     Preprint.
+                     <br/>
+                     [<a href="#" onclick="$('#spiking_abstract').toggle();return false;">abstract</a>]
+                     <div id="spiking_abstract" class="abstract" style="display:none;">
+                        <p>
+                           The literature on test set contamination largely focuses on detection, but the correction of contaminated test scores is underexplored. Our core proposal is to spike the training data by intentionally contaminating some test examples at known rates. The spiked examples can then be used to calibrate predictors of model memorization which enable principled statistical correction of inflated test scores. To evaluate different correction estimators, we first present a simulation framework based on the Hubble models. Hubble models come in minimal pairs, where the perturbed model was deliberately contaminated with several test sets, while the standard model was not, serving as the counterfactual and correction target. We consider estimators that use information from a memorization predictor, correctness predictor, or both. In simulation, we establish basic statistical intuitions and show that estimators leveraging memorization and correctness information are better than naive estimation which makes no correction at all. We then instantiate several memorization and correctness predictors, and find that simple predictors such as Platt-scaled membership inference metrics provide good signal for correction. Finally, we examine the practical considerations of spiking. Simple memorization predictors need no more than 10 examples for calibration and often transfer from one dataset to another. Taken together, spiking is a promising solution for test set contamination.
+                        </p>
+                     </div>
+                  </li>
+                  <br/>
+                  <li>
                      <a href="https://arxiv.org/pdf/2510.19811">
                      <b>Hubble: a model suite to advance the study of LLM memorization</b>
                      </a>
